@@ -9,22 +9,24 @@
 /* Begin PBXBuildFile section */
 		DB107CB727190F9E002CBDEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CB627190F9E002CBDEF /* AppDelegate.swift */; };
 		DB107CB927190F9E002CBDEF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CB827190F9E002CBDEF /* SceneDelegate.swift */; };
-		DB107CBB27190F9E002CBDEF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CBA27190F9E002CBDEF /* ViewController.swift */; };
-		DB107CBE27190F9E002CBDEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB107CBC27190F9E002CBDEF /* Main.storyboard */; };
+		DB107CBB27190F9E002CBDEF /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CBA27190F9E002CBDEF /* FirstViewController.swift */; };
 		DB107CC027190FA2002CBDEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB107CBF27190FA2002CBDEF /* Assets.xcassets */; };
 		DB107CC327190FA2002CBDEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB107CC127190FA2002CBDEF /* LaunchScreen.storyboard */; };
+		DB107CD0271D1C8B002CBDEF /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CCF271D1C8B002CBDEF /* NetworkService.swift */; };
+		DB107CD2271D214A002CBDEF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB107CD1271D214A002CBDEF /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DB107CB327190F9E002CBDEF /* iCrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB107CB627190F9E002CBDEF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB107CB827190F9E002CBDEF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DB107CBA27190F9E002CBDEF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DB107CBD27190F9E002CBDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB107CBA27190F9E002CBDEF /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		DB107CBF27190FA2002CBDEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB107CC227190FA2002CBDEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB107CC427190FA2002CBDEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB107CCA2719222B002CBDEF /* iCrypto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iCrypto.entitlements; sourceTree = "<group>"; };
+		DB107CCF271D1C8B002CBDEF /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		DB107CD1271D214A002CBDEF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,16 +59,49 @@
 		DB107CB527190F9E002CBDEF /* iCrypto */ = {
 			isa = PBXGroup;
 			children = (
-				DB107CCA2719222B002CBDEF /* iCrypto.entitlements */,
 				DB107CB627190F9E002CBDEF /* AppDelegate.swift */,
 				DB107CB827190F9E002CBDEF /* SceneDelegate.swift */,
-				DB107CBA27190F9E002CBDEF /* ViewController.swift */,
-				DB107CBC27190F9E002CBDEF /* Main.storyboard */,
+				DB107CCE271D1C68002CBDEF /* NetworkService */,
+				DB107CCB271CB901002CBDEF /* Model */,
+				DB107CCC271CB909002CBDEF /* View */,
+				DB107CCD271CB90F002CBDEF /* Controller */,
+				DB107CCA2719222B002CBDEF /* iCrypto.entitlements */,
 				DB107CBF27190FA2002CBDEF /* Assets.xcassets */,
 				DB107CC127190FA2002CBDEF /* LaunchScreen.storyboard */,
 				DB107CC427190FA2002CBDEF /* Info.plist */,
 			);
 			path = iCrypto;
+			sourceTree = "<group>";
+		};
+		DB107CCB271CB901002CBDEF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB107CCC271CB909002CBDEF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB107CD1271D214A002CBDEF /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DB107CCD271CB90F002CBDEF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB107CBA27190F9E002CBDEF /* FirstViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DB107CCE271D1C68002CBDEF /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				DB107CCF271D1C8B002CBDEF /* NetworkService.swift */,
+			);
+			path = NetworkService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,7 +164,6 @@
 			files = (
 				DB107CC327190FA2002CBDEF /* LaunchScreen.storyboard in Resources */,
 				DB107CC027190FA2002CBDEF /* Assets.xcassets in Resources */,
-				DB107CBE27190F9E002CBDEF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB107CBB27190F9E002CBDEF /* ViewController.swift in Sources */,
+				DB107CD2271D214A002CBDEF /* CustomButton.swift in Sources */,
+				DB107CBB27190F9E002CBDEF /* FirstViewController.swift in Sources */,
 				DB107CB727190F9E002CBDEF /* AppDelegate.swift in Sources */,
+				DB107CD0271D1C8B002CBDEF /* NetworkService.swift in Sources */,
 				DB107CB927190F9E002CBDEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,14 +185,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DB107CBC27190F9E002CBDEF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB107CBD27190F9E002CBDEF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DB107CC127190FA2002CBDEF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -298,7 +326,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = iBitcoin;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -328,7 +356,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = iBitcoin;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -340,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
